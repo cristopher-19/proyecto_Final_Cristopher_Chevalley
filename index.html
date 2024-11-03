@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter de pocos recurso</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Librería SweetAlert2 -->
+</head>
+<body>
+    <div class="app-container">
+        <div class="foto">
+            <img class="logo" src="/assets/twitter_logo_icon_186891.webp" alt="">
+            <h1>Micro Twitter</h1>
+        </div>
+        
+        <form id="tweetForm">
+            <textarea id="tweetInput" placeholder="¿Qué está pasando?" maxlength="280"></textarea>
+            <button type="submit">Tweetear</button>
+        </form>
+        <div class="tweets-container" id="tweetsContainer"></div>
+        <button id="loadTweetsButton">Cargar Tweets Externos</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
